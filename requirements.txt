@@ -1,4 +1,13 @@
+# Core Networking & Channel Bonding Engine
 psutil>=5.9.0
 urllib3>=2.0.0
 requests>=2.31.0
+
+# Desktop GUI Interface & Branding
+customtkinter>=5.2.0
+pillow>=10.0.0
+pystray>=0.19.5
+pywin32>=306
+
+# Terminal CLI Interface
 rich>=13.0.0

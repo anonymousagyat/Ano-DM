@@ -1503,5 +1503,10 @@ class AnoDMMainApp(tk.Tk):
 
 
 if __name__ == "__main__":
-    app = AnoDMMainApp()
-    app.mainloop()
+    if len(sys.argv) > 1 and sys.argv[1] in ["--cli", "-c", "cli"]:
+        from cli import main as cli_main
+        sys.argv.pop(1)
+        cli_main()
+    else:
+        app = AnoDMMainApp()
+        app.mainloop()

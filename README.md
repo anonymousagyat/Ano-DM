@@ -101,7 +101,7 @@ Ano-DM/
 ### 2. Installation
 ```powershell
 # Clone the repository
-git clone https://github.com/hakistan/Ano-DM.git
+git clone https://github.com/anonymousagyat/Ano-DM.git
 cd Ano-DM
 
 # Install dependencies

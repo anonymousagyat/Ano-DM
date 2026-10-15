@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build outputs
+build/
+dist/
+*.manifest
+*.spec
+
+# User download files & runtime history
+downloads/*
+!downloads/.gitkeep
+downloads/temp/*
+!downloads/temp/.gitkeep
+history.json
+*.part*
+
+# Environments & IDEs
+.venv/
+env/
+venv/
+ENV/
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

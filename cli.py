@@ -46,9 +46,18 @@ def format_bytes(byte_count: float) -> str:
 def print_banner():
     title = "⚡ ANO-DOWNLOAD MANAGER (CLI MODE) ⚡"
     subtitle = "Multi-Interface Channel Bonding • Lock-Free Parts • Instant Resume • High-Speed Merge"
+    signature = "PARI-2018"
     if USE_RICH:
-        console.print(Panel(f"[bold cyan]{title}[/bold cyan]\n[dim]{subtitle}[/dim]", border_style="cyan"))
+        console.print(
+            Panel(
+                f"[bold cyan]{title}[/bold cyan]\n[dim]{subtitle}[/dim]",
+                title=f"[bright_black]{signature}[/bright_black]",
+                title_align="right",
+                border_style="cyan"
+            )
+        )
     else:
+        print(f"\033[90m{signature.rjust(70)}\033[0m")
         print("=" * 70)
         print(f" {title}")
         print(f" {subtitle}")
